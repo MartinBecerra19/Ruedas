@@ -8,11 +8,23 @@
     <title>Presupuesto Rueda</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <img id="imagen">
-    <input type="file" id="file" accept="image/*" capture>
+    <div id="container">
+        <h1>Sube una foto</h1>
+        <img id="imagen">
+        <form action="" method="post">
+            <div id="foto">
+                <label id="imgFoto"></label>
+                <input type="file" id="file" accept="image/*" capture>
+            </div>
+            <input type="text" name="nombre" placeholder="Nombre" class="ocultar">
+            <input type="email" name="email" placeholder="Email" class="ocultar">
+            <input type="submit" class="ocultar" value="Enviar">
+        </form>
+    </div>
 </body>
 
 </html>
